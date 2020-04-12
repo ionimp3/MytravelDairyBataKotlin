@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2A2A"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnnewplan"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="76dp"
+        android:background="#00000000"
+        android:contentDescription="@string/btnnewplan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewbetalogo"
+        app:srcCompat="@drawable/btnnewplan" />
+
+    <ImageButton
+        android:id="@+id/btnviewplan"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:background="#00000000"
+        android:contentDescription="@string/btnviewplan"
+        app:layout_constraintStart_toEndOf="@+id/btnnewplan"
+        app:layout_constraintTop_toBottomOf="@+id/viewbetalogo"
+        app:srcCompat="@drawable/btnviewplan" />
+
+    <TextView
+        android:id="@+id/betatext1"
+        android:layout_width="226dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/betatext1"
+        android:text="@string/betatext1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnviewplan" />
+
+    <ImageButton
+        android:id="@+id/dnattfileicon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="72dp"
+        android:background="#00000000"
+        android:contentDescription="@string/dnattfileicon"
+        app:layout_constraintStart_toStartOf="@+id/dnattfiletext1"
+        app:layout_constraintTop_toBottomOf="@+id/betatext1"
+        app:srcCompat="@drawable/dnattfileicon" />
+
+    <ImageView
+        android:id="@+id/dnattfiletext1"
+        android:layout_width="305dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/dnattfiletext1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betatext1"
+        app:srcCompat="@drawable/dnattfiletext" />
+
+    <ImageView
+        android:id="@+id/viewbetalogo"
+        android:layout_width="231dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="136dp"
+        android:contentDescription="@string/viewbetalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/viewbetalogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2A2A"
+    tools:context=".MyTravelDairyNew">
+
+    <FrameLayout
+        android:id="@+id/btnarea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/logotext"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="@string/backbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/logotext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbtn" />
+
+    <EditText
+        android:id="@+id/editplanname"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:hint="@string/editplanname"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|text"
+        android:maxLength="13"
+        android:privateImeOptions="korean"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textColorHint="#C7333030"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/testbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editplandepartday"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputbg"
+        android:ems="10"
+        android:hint="@string/editdepart"
+        android:inputType="date"
+        android:privateImeOptions="english"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textColorHint="#C7333030"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/editplanname"
+        app:layout_constraintTop_toBottomOf="@+id/editplanname" />
+
+    <EditText
+        android:id="@+id/editplandays"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/inputbg"
+        android:digits="123456789"
+        android:ems="10"
+        android:hint="@string/days"
+        android:inputType="number"
+        android:maxLength="3"
+        android:privateImeOptions="english"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textColorHint="#C7333030"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/editplandepartday"
+        app:layout_constraintTop_toBottomOf="@+id/editplandepartday" />
+
+    <Button
+        android:id="@+id/testbtn"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="434dp"
+        android:background="@drawable/btnredbg"
+        android:text="@string/testbtn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editplanname" />
+
+    <TextView
+        android:id="@+id/testView2"
+        android:layout_width="287dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#ffffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
