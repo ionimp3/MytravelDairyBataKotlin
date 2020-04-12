@@ -31,7 +31,7 @@ class MyTravelDairyNew : AppCompatActivity()  {
         _testbtn = findViewById<Button>(R.id.testbtn)
 
         //String chg_onlydate = _plandepartday . getText ().toString()
-        testView2?.text = "test --> $_onlydate"
+        //testView2?.text = "test --> $_onlydate"
         //_plandepartday?.text = "test --> $_onlydate"
 
         _testbtn!!.setOnClickListener { testenablebtn() }
