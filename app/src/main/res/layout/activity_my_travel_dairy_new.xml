@@ -60,8 +60,7 @@
         android:id="@+id/editplanname"
         android:layout_width="270dp"
         android:layout_height="40dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/inputbg"
         android:ems="10"
         android:hint="@string/editplanname"
@@ -74,8 +73,8 @@
         android:textColor="#ffffffff"
         android:textColorHint="#C7333030"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/testbtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -88,8 +87,8 @@
         android:background="@drawable/inputbg"
         android:ems="10"
         android:hint="@string/editdepart"
-        android:inputType="date"
-        android:privateImeOptions="english"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
         android:textAlignment="center"
         android:textColor="#ffffffff"
         android:textColorHint="#C7333030"
@@ -104,7 +103,6 @@
         android:layout_marginTop="16dp"
         android:autofillHints=""
         android:background="@drawable/inputbg"
-        android:digits="123456789"
         android:ems="10"
         android:hint="@string/days"
         android:inputType="number"
@@ -114,30 +112,27 @@
         android:textColor="#ffffffff"
         android:textColorHint="#C7333030"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/createplanbtn"
         app:layout_constraintStart_toStartOf="@+id/editplandepartday"
-        app:layout_constraintTop_toBottomOf="@+id/editplandepartday" />
+        app:layout_constraintTop_toBottomOf="@+id/editplandepartday"
+        app:layout_constraintVertical_bias="0.01" />
 
     <Button
-        android:id="@+id/testbtn"
+        android:id="@+id/createplanbtn"
         android:layout_width="85dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="434dp"
         android:background="@drawable/btnredbg"
         android:text="@string/testbtn"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editplanname" />
+        app:layout_constraintTop_toBottomOf="@+id/editplanname"
+        app:layout_constraintVertical_bias="0.316" />
 
-    <TextView
-        android:id="@+id/testView2"
-        android:layout_width="287dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="32dp"
-        android:textColor="#ffffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testbtn" />
+    <include
+        android:id="@+id/_myprogressBar"
+        layout="@layout/myprogressbar"
+        android:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
